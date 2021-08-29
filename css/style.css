@@ -3,6 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
 header {
   width: 100%;
 }
@@ -47,15 +53,18 @@ nav a {
 
 .show {
   display: flex;
+  width: 60%;
 }
 
 .thumbs {
+  width: 20%;
   padding: 0;
   margin: 0 5px;
   display: flex;
   flex-direction: column;
-  height: 270px;
+  align-items: center;
   overflow: hidden;
+  border: 1px solid #444;
 }
 
 .thumbs li {
@@ -69,22 +78,25 @@ nav a {
 }
 
 .display {
-  width: 150px;
-  height: 270px;
-  margin-right: 5px;
+  width: 80%;
 }
 
 .display img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .product-infos {
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
 .color-info {
   width: 100%;
+  margin: 5px 0;
+}
+
+.color-set {
   margin: 5px 0;
 }
 
@@ -123,6 +135,10 @@ nav a {
   border-radius: 50%;
 }
 
+.sizes-title {
+  margin: 5px 0;
+}
+
 .sizes {
   width: 100%;
   display: flex;
@@ -133,12 +149,21 @@ nav a {
 .size {
   border: 1px solid #d6d6d6;
 
-  width: 30px;  
+  width: 18%;  
   height: 30px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: ease all .5s;
+}
+
+.size:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  font-weight: 600;
 }
 
 .buttons {
@@ -155,6 +180,12 @@ nav a {
   font-weight: 800;
   
   margin-bottom: 10px;
+
+  transition: ease all .5s;
+}
+
+.add-cart:hover {
+  opacity: .7;
 }
 
 .add-wish-list {
@@ -166,8 +197,41 @@ nav a {
   font-weight: 800;
   
   margin-bottom: 10px;
+
+  transition: ease all .5s;
+}
+
+.add-wish-list:hover {
+  opacity: .7;
 }
 
 .products-details {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(
+    transparent 49%, 
+    #F3F1EF 50% 51%, 
+    transparent 52% 100%);
+}
+
+.details-buttons {
+  background: #F3F1EF;
+  width: 90%;
+  height: 40px;
+
+  display: flex;
+}
+
+.details-buttons button {
+  width: 50%;
+  border: none;
+  background-color: #F3F1EF;
+
+  transition: ease all .5s;
+}
+
+.clicked {
+  background-color: white;
+  font-weight: 600;
 }
