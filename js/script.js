@@ -25,3 +25,16 @@ for(let t = 0; t <= thumbs.length; t++) {
     }
   });
 }
+
+
+class Product {
+  constructor (id, type, productName, productColor, value, productSizes, details, fit) {
+    this.id = id;
+    this.productName = productName;
+    this.productColor = productColor;
+    this.value = value;
+    this.productSizes = productSizes;
+    this.details = details;
+    this.fit = fit;
+  }
+}
