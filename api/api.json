@@ -1,0 +1,22 @@
+[
+  {
+    "id": "01",
+    "type": "Roupa feminina",
+    "productName": "Jaqueta Feminina",
+    "productColor": "Preta",
+    "value": "R$ 450,00",
+    "productSizes": ["XP", "P", "M", "G", "XG"],
+    "details": "Jaqueta feminina em material sintético na cor preta.",
+    "fit": "O tamanho XP veste x, o tamanho P veste p..."
+  },
+  {
+    "id": "02",
+    "type": "Roupa feminina",
+    "productName": "Jaqueta Feminina",
+    "productColor": "Sarge",
+    "value": "R$ 450,00",
+    "productSizes": ["XP", "P", "M", "G", "XG"],
+    "details": "Jaqueta feminina em material sintético na cor preta.",
+    "fit": "O tamanho XP veste x, o tamanho P veste p..."
+  }
+]
