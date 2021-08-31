@@ -7,6 +7,8 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
+  max-width: 100%;
+  margin: auto;
 }
 
 header {
@@ -57,14 +59,13 @@ nav a {
 }
 
 .thumbs {
-  width: 20%;
+  max-width: 20%;
   padding: 0;
   margin: 0 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  border: 1px solid #444;
 }
 
 .thumbs li {
@@ -82,7 +83,7 @@ nav a {
 }
 
 .display img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .product-infos {
@@ -113,10 +114,16 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  cursor: pointer;
 }
 
 .color + .color {
   margin-left: 5px;
+}
+
+.color-clicked {
+  border: none;
 }
 
 #black {
@@ -234,4 +241,11 @@ nav a {
 .clicked {
   background-color: white;
   font-weight: 600;
+}
+
+
+@media screen and (min-width: 800px) {
+  body {
+    max-width: 800px;
+  }
 }
