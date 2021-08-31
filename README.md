@@ -14,7 +14,7 @@ The page consumns a json file simulating an API consumption, and then render thi
 
 # What's out of this project?
 
-The code decoupling was the first thing out. All the projects rules it's in an single file (bad practice by the way). But the intention here, its just to test some speed and response and to compare with the two other ways this project will be builded. You will see here, the layers of Business, Applicatoin, Presentation, and Data access in one single file (please don't be nauseated), but, for this project two new versions you will see the most modern architecture implemented on two frameworks to SPA.
+The code decoupling was the first thing out. All the projects rules it's in an single file (bad practice by the way). But the intention here, its just to test some speed and response and to compare with the two other ways this project will be builded. You will see here, the layers of Business, Application, Presentation, and Data access in one single file (please don't be nauseated), but, for this project two new versions you will see the most modern architecture implemented on two frameworks to SPA.
 
 # What's next?
 
